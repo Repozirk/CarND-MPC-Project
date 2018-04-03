@@ -132,7 +132,7 @@ int main() {
 
           //predict state with latency of 100ms
           double pred_px = 0.0 + v * 1.0 * latency;
-          const double pred_py = 0.0 + v * 0.0 * latency;;
+          double pred_py = 0.0 + v * 0.0 * latency;
           double pred_psi = 0.0 + v * -delta / Lf * latency;
           double pred_v = v + a * latency;
           double pred_cte = cte + v * sin(epsi) * latency;
